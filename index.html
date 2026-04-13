@@ -207,9 +207,20 @@
       padding: 0 clamp(1.5rem,5.5vw,6rem) clamp(4rem,8vw,7rem);
       overflow: hidden;
     }
-    #hero video {
-      position: absolute; inset: 0; width: 100%; height: 100%;
-      object-fit: cover; z-index: 0;
+    .yt-bg {
+      position: absolute; inset: 0; overflow: hidden; z-index: 0;
+      pointer-events: none;
+    }
+    .yt-bg iframe {
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 100vw;
+      height: 56.25vw;   /* 16:9 */
+      min-height: 100vh;
+      min-width: 177.78vh; /* 16:9 inverse */
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      border: none;
     }
     #hero .overlay {
       position: absolute; inset: 0; z-index: 1;
@@ -398,9 +409,14 @@
 
 <!-- HERO -->
 <section id="hero" class="grain">
-  <video autoplay muted loop playsinline poster="https://placehold.co/1920x1080/0B0A09/0B0A09">
-    <source src="media/Forty-One - The World's Game Our Way.mp4" type="video/mp4">
-  </video>
+  <div class="yt-bg">
+    <iframe
+      src="https://www.youtube.com/embed/-GTw6pk5Lk0?autoplay=1&mute=1&loop=1&playlist=-GTw6pk5Lk0&controls=0&rel=0&iv_load_policy=3&disablekb=1&fs=0&cc_load_policy=0&modestbranding=1&playsinline=1"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+      title="Hero background video">
+    </iframe>
+  </div>
   <div class="overlay"></div>
 
   <div class="content">
