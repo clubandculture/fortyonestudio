@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Claude Code
+.claude/
+
+# Temporary screenshots
+temporary screenshots/
+temp/
+
+# Node
+node_modules/
