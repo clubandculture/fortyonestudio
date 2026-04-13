@@ -6,6 +6,11 @@
 # Claude Code
 .claude/
 
+# Media (large files)
+*.mp4
+*.mov
+*.avi
+
 # Temporary screenshots
 temporary screenshots/
 temp/
