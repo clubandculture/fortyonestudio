@@ -16,6 +16,13 @@
       font-style: normal;
       font-display: swap;
     }
+    @font-face {
+      font-family: 'DrukWide';
+      src: url('brand_assets/DrukWide-Bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
     /* ── DESIGN SYSTEM ───────────────────────────────── */
     :root {
       --black:   #0B0A09;
@@ -27,7 +34,7 @@
       --gray-lt: #B5AEA6;
       --rule:    rgba(244,239,233,0.09);
       --rule-dk: rgba(11,10,9,0.1);
-      --fd: 'DrukCond', sans-serif;
+      --fd: 'DrukWide', sans-serif;
       --fb: 'Outfit', sans-serif;
       --fl: 'Syne', sans-serif;
     }
@@ -111,7 +118,7 @@
 
     /* ── TYPE SCALE ──────────────────────────────────── */
     .d-hero {
-      font-family: var(--fd);
+      font-family: 'DrukCond', sans-serif;
       font-size: clamp(3.675rem, 9.19vw, 11.375rem);
       font-weight: 900; line-height: .9; text-transform: uppercase; letter-spacing: -.01em;
     }
@@ -360,6 +367,20 @@
     [data-d="4"] { transition-delay: .4s; }
     [data-d="5"] { transition-delay: .5s; }
 
+    /* ── CLIENTS ────────────────────────────────────── */
+    .clients-grid {
+      display: flex; flex-wrap: wrap;
+      justify-content: center; align-items: center;
+      gap: 3rem 5rem; max-width: 1100px; margin: 4rem auto 0;
+    }
+    .client-logo {
+      height: 54px; width: auto; max-width: 150px;
+      object-fit: contain; display: block;
+      opacity: .5;
+      transition: opacity .25s ease;
+    }
+    .client-logo:hover { opacity: 1; }
+
     /* ── RESPONSIVE ──────────────────────────────────── */
     @media (max-width: 860px) {
       .about-grid { grid-template-columns: 1fr; }
@@ -389,7 +410,6 @@
   <ul class="nav-links">
     <li><a href="about.html">About</a></li>
     <li><a href="services.html">Services</a></li>
-    <li><a href="process.html">Process</a></li>
     <li><a href="work.html">Work</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
@@ -447,7 +467,7 @@
   <p class="lbl" data-r>01 — About</p>
   <div class="about-grid">
     <div>
-      <h2 class="d-lg" style="color:var(--white);margin-top:1.2rem" data-r data-d="1">
+      <h2 class="d-lg" style="color:var(--white);margin-top:1.2rem;font-size:40px" data-r data-d="1">
         We don't approximate culture.<br><em>We come from it.</em>
       </h2>
     </div>
@@ -470,7 +490,7 @@
 <!-- SERVICES -->
 <section class="sec" style="background:var(--white)">
   <p class="lbl" style="color:var(--accent)" data-r>02 — What We Do</p>
-  <h2 class="d-md" style="color:var(--black);margin-top:.9rem;max-width:420px" data-r data-d="1">
+  <h2 class="d-md" style="color:var(--black);margin-top:.9rem;max-width:700px;font-size:40px" data-r data-d="1">
     Three disciplines.<br>One standard.
   </h2>
 
@@ -502,16 +522,45 @@
 
 <div class="rule-h"></div>
 
+<!-- CLIENTS -->
+<section class="sec" style="background:var(--black);text-align:center">
+  <h2 style="font-family:var(--fd);font-size:40px;color:#F4EFE9;text-align:center;text-transform:uppercase;letter-spacing:-.01em;line-height:1" data-r>Who We've Worked With</h2>
+  <p class="body-lg" style="max-width:500px;margin:.9rem auto 0" data-r data-d="1">
+    Forty-One Studio works with some of the best brands in the sports world.
+  </p>
+
+  <div class="clients-grid" data-r data-d="2">
+    <!-- Row 1 -->
+    <img src="brand_assets/MLS.png"            alt="MLS"              class="client-logo">
+    <img src="brand_assets/Adidas.png"         alt="adidas"           class="client-logo">
+    <img src="brand_assets/EA_Sports.png"      alt="EA Sports"        class="client-logo">
+    <img src="brand_assets/US_Soccer.png"      alt="US Soccer"        class="client-logo">
+    <img src="brand_assets/LA_Galaxy.png"      alt="LA Galaxy"        class="client-logo">
+    <img src="brand_assets/BVB.png"            alt="BVB Dortmund"     class="client-logo">
+    <img src="brand_assets/Betis.png"          alt="Real Betis"       class="client-logo">
+    <!-- Row 2 -->
+    <img src="brand_assets/Puma.png"           alt="Puma"             class="client-logo">
+    <img src="brand_assets/STL_City.png"       alt="STL City SC"      class="client-logo">
+    <img src="brand_assets/Nike.png"           alt="Nike"             class="client-logo">
+    <img src="brand_assets/Charlotte_FC.png"   alt="Charlotte FC"     class="client-logo">
+    <img src="brand_assets/Concacaf_Logo_1.png" alt="Concacaf"        class="client-logo">
+    <img src="brand_assets/World_Soccer_Shop.png" alt="World Soccer Shop" class="client-logo">
+    <img src="brand_assets/Nikys+Sports.png"   alt="Niky's Sports"    class="client-logo">
+  </div>
+</section>
+
+<div class="rule-h"></div>
+
 <!-- WORK TEASER -->
-<section class="sec grain" style="background:var(--black)">
+<section class="sec grain" style="background:var(--white)">
   <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1.5rem">
     <div>
       <p class="lbl" data-r>03 — Selected Work</p>
-      <h2 class="d-md" style="color:var(--white);margin-top:.9rem;max-width:580px" data-r data-d="1">
+      <h2 class="d-md" style="color:var(--black);margin-top:.9rem;max-width:580px;font-size:40px" data-r data-d="1">
         A look at what we've made, and who we've made it with.
       </h2>
     </div>
-    <a href="work.html" class="link-arrow" data-r>
+    <a href="work.html" class="link-arrow dark" data-r>
       View All Projects
       <svg width="14" height="8" fill="none" viewBox="0 0 14 8"><path d="M10 1l3 3m0 0l-3 3m3-3H1" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
@@ -576,7 +625,7 @@
   </div>
   <div style="position:relative;z-index:2">
   <p class="lbl" style="display:block;text-align:center" data-r>Ready to work</p>
-  <h2 class="d-xl" style="margin:1rem 0 2rem" data-r data-d="1">Build With Us.</h2>
+  <h2 class="d-xl" style="margin:1rem 0 2rem;font-size:60px" data-r data-d="1">Build With Us.</h2>
   <p class="body-lg" style="max-width:500px;margin:0 auto 3rem" data-r data-d="2">
     Whether you're planning a campaign, developing a brand strategy, or producing a live experience — we'd like to hear about it.
   </p>

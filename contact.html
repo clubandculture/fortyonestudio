@@ -16,7 +16,14 @@
       font-style: normal;
       font-display: swap;
     }
-    :root{--black:#0B0A09;--dark:#121110;--dark2:#1B1916;--white:#F4EFE9;--accent:#c2a40f;--gray:#7A736B;--rule:rgba(244,239,233,.09);--rule-dk:rgba(11,10,9,.1);--fd:'DrukCond',sans-serif;--fb:'Outfit',sans-serif;--fl:'Syne',sans-serif}
+    @font-face {
+      font-family: 'DrukWide';
+      src: url('brand_assets/DrukWide-Bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    :root{--black:#0B0A09;--dark:#121110;--dark2:#1B1916;--white:#F4EFE9;--accent:#c2a40f;--gray:#7A736B;--rule:rgba(244,239,233,.09);--rule-dk:rgba(11,10,9,.1);--fd:'DrukWide',sans-serif;--fb:'Outfit',sans-serif;--fl:'Syne',sans-serif}
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth}
     body{background:var(--black);color:var(--white);font-family:var(--fb);-webkit-font-smoothing:antialiased;overflow-x:hidden}

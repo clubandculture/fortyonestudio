@@ -35,7 +35,7 @@ const PROJECTS = {
     overview: [
       'World Soccer Shop set out to connect the Jamaican diaspora to the Bob Marley and Jamaica Football Federation collections through a culture-forward campaign built to drive sales.',
     ],
-    deliverables: ['Brand Film', 'Community Content', 'Photography'],
+    deliverables: ['Social Content', 'Brand Vignettes', 'Photography'],
     link: '',
     featured: {
       type: 'image',
