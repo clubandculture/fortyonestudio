@@ -69,11 +69,11 @@
     .filter-btn:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
 
     /* WORK GRID */
-    .work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:2.5rem}
+    .work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:2px;margin-top:2.5rem}
     .work-card{position:relative;overflow:hidden;cursor:pointer;display:block;text-decoration:none}
-    .work-card.wide{grid-column:span 2}
+    .work-card.wide{grid-column:span 1}
     .work-card .thumb{aspect-ratio:4/3;overflow:hidden}
-    .work-card.wide .thumb{aspect-ratio:16/9}
+    .work-card.wide .thumb{aspect-ratio:4/3}
     .work-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .8s cubic-bezier(.25,.46,.45,.94)}
     .work-card:hover img{transform:scale(1.05)}
     .work-card .ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(11,10,9,.88) 0%,rgba(11,10,9,.05) 55%);transition:background .4s ease}
@@ -87,7 +87,6 @@
     .work-card .desc{font-size:.8rem;line-height:1.6;color:rgba(244,239,233,.55);margin-top:.6rem;max-width:380px;opacity:0;transform:translateY(6px);transition:opacity .35s ease,transform .35s ease}
     .work-card:hover .desc{opacity:1;transform:translateY(0)}
 
-    @media(max-width:900px){.work-grid{grid-template-columns:1fr 1fr}.work-card.wide{grid-column:span 2}}
     @media(max-width:600px){.work-grid{grid-template-columns:1fr}.work-card.wide{grid-column:span 1}.work-card.wide .thumb{aspect-ratio:4/3}footer{grid-template-columns:1fr;text-align:center}.footer-copy{text-align:center}.footer-logo{display:flex;justify-content:center}.nav-links{display:none}#menuBtn{display:flex}}
   </style>
 </head>
@@ -116,7 +115,7 @@
 <!-- PAGE HERO -->
 <section class="grain" style="background:var(--dark);padding:clamp(8rem,14vw,13rem) clamp(1.5rem,5.5vw,6rem) clamp(4rem,7vw,7rem)">
   <p class="lbl" data-r>Page 05 — Work</p>
-  <h1 class="d-xl" style="color:var(--white);margin-top:1.2rem" data-r data-d="1">
+  <h1 class="d-xl" style="color:var(--white);margin-top:1.2rem;font-size:60px" data-r data-d="1">
     Selected <em>projects.</em>
   </h1>
   <p class="body-lg" style="max-width:540px;margin-top:2rem" data-r data-d="2">
@@ -136,6 +135,34 @@
 <!-- WORK GRID -->
 <section class="sec grain" style="background:var(--black);padding-top:clamp(3rem,5vw,5rem)">
   <div class="work-grid" id="workGrid">
+
+    <a href="work/project.html?p=nike-toma-atl" class="work-card wide" data-cat="content" data-r>
+      <div class="thumb">
+        <img src="media/NikeTomaATL/DG101401.jpg" alt="Nike Toma ATL">
+      </div>
+      <div class="ov"></div>
+      <div class="color-layer" style="background:#111111"></div>
+      <div class="info">
+        <p class="cat">Content &amp; Production</p>
+        <h2 class="title">Nike Toma ATL</h2>
+        <p class="yr">2026</p>
+        <p class="desc">Creator-led content for Nike's Atlanta edition of their TOMA El Juego series.</p>
+      </div>
+    </a>
+
+    <a href="work/project.html?p=adidas-x-jff" class="work-card wide" data-cat="content" data-r>
+      <div class="thumb">
+        <img src="media/adidasxjff/TNW00052.jpg" alt="adidas x JFF for World Soccer Shop">
+      </div>
+      <div class="ov"></div>
+      <div class="color-layer" style="background:#1A1A1A"></div>
+      <div class="info">
+        <p class="cat">Content &amp; Production</p>
+        <h2 class="title">adidas x JFF for World Soccer Shop</h2>
+        <p class="yr">2026</p>
+        <p class="desc">National marketing creative for World Soccer Shop's adidas x JFF collection.</p>
+      </div>
+    </a>
 
     <a href="work/project.html?p=brand-campaign-film-series" class="work-card wide" data-cat="content" data-r>
       <div class="thumb">

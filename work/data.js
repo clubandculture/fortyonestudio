@@ -25,6 +25,67 @@
 
 const PROJECTS = {
 
+  'nike-toma-atl': {
+    title: 'Nike Toma ATL',
+    service: 'Content & Production',
+    client: 'Nike',
+    year: '2026',
+    region: 'North America',
+    heroDesc: 'Creator-led content for Nike\'s Atlanta edition of their TOMA El Juego series.',
+    overview: [
+      'When Nike\'s Toma El Juego rolled into ATL, they needed native, creator-led content with a uniquely Atlanta flair. We tapped our Forty-One FC creator pool in Atlanta for two creators who could bring the authentic energy that Nike\'s brand team was looking for. In addition to providing creators, we also provided all production support.',
+    ],
+    deliverables: ['Social Content', 'Photography'],
+    link: '',
+    featured: {
+      type: 'image',
+      src: '../media/NikeTomaATL/DG101401.jpg',
+      caption: '',
+    },
+    gallery: [
+      { type: 'embed', embedSrc: 'https://www.youtube.com/embed/mh-qCa5ESoU', alt: 'Nike Toma ATL — Creator film 1', layout: 'wide',   ratio: 'video'   },
+      { type: 'embed', embedSrc: 'https://www.youtube.com/embed/SoZ-sRWm3R4', alt: 'Nike Toma ATL — Creator film 2', layout: 'wide',   ratio: 'video'   },
+      { type: 'image', src: '../media/NikeTomaATL/DG101484.jpg', alt: 'Nike Toma ATL', layout: 'normal', ratio: 'square'  },
+      { type: 'image', src: '../media/NikeTomaATL/DG101497.jpg', alt: 'Nike Toma ATL', layout: 'normal', ratio: 'square'  },
+      { type: 'image', src: '../media/NikeTomaATL/DG101577.jpg', alt: 'Nike Toma ATL', layout: 'normal', ratio: 'portrait'},
+      { type: 'image', src: '../media/NikeTomaATL/DG101671.jpg', alt: 'Nike Toma ATL', layout: 'normal', ratio: 'portrait'},
+      { type: 'image', src: '../media/NikeTomaATL/DG101679.jpg', alt: 'Nike Toma ATL', layout: 'normal', ratio: 'square'  },
+      { type: 'image', src: '../media/NikeTomaATL/DG102561.jpg', alt: 'Nike Toma ATL', layout: 'normal', ratio: 'square'  },
+      { type: 'image', src: '../media/NikeTomaATL/DG102564.jpg', alt: 'Nike Toma ATL', layout: 'wide',   ratio: 'video'   },
+    ],
+  },
+
+  'adidas-x-jff': {
+    title: 'adidas x JFF for World Soccer Shop',
+    service: 'Content & Production',
+    client: 'World Soccer Shop',
+    year: '2026',
+    region: 'North America',
+    heroDesc: 'National marketing creative for World Soccer Shop\'s adidas x JFF collection.',
+    overview: [
+      'World Soccer Shop set out to connect the Jamaican diaspora to the Bob Marley and Jamaica Football Federation collections through a culture-forward campaign built to drive sales.',
+    ],
+    deliverables: ['Social Content', 'Brand Vignettes', 'Photography'],
+    link: '',
+    featured: {
+      type: 'image',
+      src: '../media/adidasxjff/TNW00052.jpg',
+      caption: '',
+    },
+    gallery: [
+      { type: 'embed', embedSrc: 'https://www.youtube.com/embed/pYS0FgxKECw', alt: 'Campaign film', layout: 'wide',   ratio: 'video'   },
+      { type: 'image', src: '../media/adidasxjff/TNW00443.jpg', alt: 'Campaign still', layout: 'normal', ratio: 'square'  },
+      { type: 'image', src: '../media/adidasxjff/TNW00516.jpg', alt: 'Campaign still', layout: 'normal', ratio: 'square'  },
+      { type: 'image', src: '../media/adidasxjff/TNW00591.jpg', alt: 'Campaign still', layout: 'normal', ratio: 'portrait'},
+      { type: 'image', src: '../media/adidasxjff/TNW00614.jpg', alt: 'Campaign still', layout: 'normal', ratio: 'portrait'},
+      { type: 'image', src: '../media/adidasxjff/TNW00662.jpg', alt: 'Campaign still', layout: 'normal', ratio: 'square'  },
+      { type: 'image', src: '../media/adidasxjff/TNW00714.jpg', alt: 'Campaign still', layout: 'normal', ratio: 'square'  },
+      { type: 'image', src: '../media/adidasxjff/TNW00847.jpg', alt: 'Campaign still', layout: 'wide',   ratio: 'video'   },
+      { type: 'image', src: '../media/adidasxjff/TNW00927.jpg', alt: 'Campaign still', layout: 'normal', ratio: 'portrait'},
+      { type: 'image', src: '../media/adidasxjff/IMG_9324.jpg', alt: 'Campaign still', layout: 'normal', ratio: 'portrait'},
+    ],
+  },
+
   'brand-campaign-film-series': {
     title: 'adidas x JFF',
     service: 'Content & Production',
