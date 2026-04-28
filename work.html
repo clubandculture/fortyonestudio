@@ -114,7 +114,7 @@
 
 <!-- PAGE HERO -->
 <section class="grain" style="background:var(--dark);padding:clamp(8rem,14vw,13rem) clamp(1.5rem,5.5vw,6rem) clamp(4rem,7vw,7rem)">
-  <p class="lbl" data-r>Page 05 — Work</p>
+  <p class="lbl" data-r>Work</p>
   <h1 class="d-xl" style="color:var(--white);margin-top:1.2rem;font-size:60px" data-r data-d="1">
     Selected <em>projects.</em>
   </h1>
@@ -124,9 +124,9 @@
 
   <div class="filter-bar" data-r data-d="3" role="group" aria-label="Filter projects">
     <button class="filter-btn active" data-filter="all">All</button>
-    <button class="filter-btn" data-filter="content">Content</button>
-    <button class="filter-btn" data-filter="strategy">Strategy</button>
-    <button class="filter-btn" data-filter="experiential">Experiential</button>
+    <button class="filter-btn" data-filter="content">Content &amp; Production</button>
+    <button class="filter-btn" data-filter="strategy">Strategy &amp; Consulting</button>
+    <button class="filter-btn" data-filter="experiential">Experiential &amp; Events</button>
   </div>
 </section>
 
@@ -221,7 +221,7 @@
     <li><a href="work.html">Work</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  <p class="footer-copy">© 2025 Forty-One Studio<br>Part of The Forty-One Group</p>
+  <p class="footer-copy">&copy; <span class="footer-year">2026</span> Forty-One Studio | A Forty-One Group Company</p>
 </footer>
 
 <script>
@@ -239,9 +239,10 @@
       const f=b.dataset.filter;
       cards.forEach(c=>{
         const show=f==='all'||c.dataset.cat===f;
-        c.style.opacity=show?'1':'0.2';
+        c.style.opacity=show?'1':'0';
         c.style.pointerEvents=show?'':'none';
-        c.style.transition='opacity .35s ease';
+        c.style.transition='opacity .3s ease';
+        c.style.display=show?'block':'none';
       });
     });
   });
@@ -249,5 +250,6 @@
   const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
   document.querySelectorAll('[data-r]').forEach(el=>io.observe(el));
 </script>
+<script>document.querySelectorAll('.footer-year').forEach(function(e){e.textContent=new Date().getFullYear();});</script>
 </body>
 </html>

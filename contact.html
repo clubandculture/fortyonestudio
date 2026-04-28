@@ -125,9 +125,9 @@
 
 <!-- PAGE HERO -->
 <section class="grain" style="background:var(--dark);padding:clamp(8rem,14vw,13rem) clamp(1.5rem,5.5vw,6rem) clamp(4rem,7vw,7rem)">
-  <p class="lbl" data-r>Page 06 — Contact</p>
-  <h1 class="d-xl" style="color:var(--white);margin-top:1.2rem;max-width:860px;font-size:60px" data-r data-d="1">
-    Let's make something <em>together.</em>
+  <p class="lbl" data-r>Contact</p>
+  <h1 class="d-xl" style="color:var(--white);margin-top:1.2rem;max-width:1100px;font-size:60px" data-r data-d="1">
+    Let's Make Something<br><em>Together.</em>
   </h1>
   <p class="body-lg" style="max-width:560px;margin-top:2rem" data-r data-d="2">
     If you're a brand that wants to connect with your audience in a way that's genuinely accurate — not just culturally adjacent — we'd like to hear from you. Tell us what you're working on.
@@ -143,7 +143,7 @@
     <!-- FORM -->
     <div>
       <p class="lbl" style="margin-bottom:3rem" data-r>Start a conversation</p>
-      <form class="form-fields" data-r data-d="1" action="#" method="POST" novalidate>
+      <form class="form-fields" data-r data-d="1" id="contactForm" novalidate>
         <div class="form-row">
           <div class="form-field">
             <label class="form-label" for="name">Name</label>
@@ -184,12 +184,6 @@
     <!-- INFO -->
     <div style="padding-top:5rem" data-r data-d="2">
       <div class="info-block">
-        <span class="info-label">Direct Email</span>
-        <p class="info-val">
-          <a href="mailto:hello@forty-one.studio">hello@forty-one.studio</a>
-        </p>
-      </div>
-      <div class="info-block">
         <span class="info-label">Where We Work</span>
         <p class="info-val">
           North America &middot; Central America<br>
@@ -200,8 +194,8 @@
       <div class="info-block">
         <span class="info-label">Follow</span>
         <p class="info-val">
-          <a href="#">Instagram</a><br>
-          <a href="#">LinkedIn</a>
+          <a href="https://instagram.com/fortyone.studio" target="_blank" rel="noopener">Instagram</a><br>
+          <a href="https://www.linkedin.com/company/forty-one-studio-us/" target="_blank" rel="noopener">LinkedIn</a>
         </p>
       </div>
       <div style="margin-top:4rem;padding-top:3rem;border-top:1px solid var(--rule)">
@@ -223,15 +217,35 @@
     <li><a href="work.html">Work</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  <p class="footer-copy">© 2025 Forty-One Studio<br>Part of The Forty-One Group</p>
+  <p class="footer-copy">&copy; <span class="footer-year">2026</span> Forty-One Studio | A Forty-One Group Company</p>
 </footer>
 
 <script>
   const btn=document.getElementById('menuBtn'),mob=document.getElementById('mobileNav');
   let open=false;
   btn.addEventListener('click',()=>{open=!open;mob.classList.toggle('open',open);document.body.style.overflow=open?'hidden':'';const[s1,s2]=btn.querySelectorAll('span');s1.style.transform=open?'translateY(3.5px) rotate(45deg)':'';s2.style.transform=open?'translateY(-3.5px) rotate(-45deg)':''});
+  // Contact form → mailto
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name    = document.getElementById('name').value.trim();
+    const org     = document.getElementById('org').value.trim();
+    const email   = document.getElementById('email').value.trim();
+    const service = document.getElementById('service').value;
+    const message = document.getElementById('message').value.trim();
+    const subject = encodeURIComponent('New Inquiry — Forty-One Studio' + (name ? ': ' + name : ''));
+    const body    = encodeURIComponent(
+      'Name: ' + name + '\n' +
+      'Organization: ' + org + '\n' +
+      'Email: ' + email + '\n' +
+      'Service: ' + service + '\n\n' +
+      'Message:\n' + message
+    );
+    window.location.href = 'mailto:el@thefortyonegroup.com?subject=' + subject + '&body=' + body;
+  });
+
   const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.08,rootMargin:'0px 0px -40px 0px'});
   document.querySelectorAll('[data-r]').forEach(el=>io.observe(el));
 </script>
+<script>document.querySelectorAll('.footer-year').forEach(function(e){e.textContent=new Date().getFullYear();});</script>
 </body>
 </html>

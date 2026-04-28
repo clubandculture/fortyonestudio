@@ -464,7 +464,7 @@
 
 <!-- ABOUT TEASER -->
 <section class="sec grain" style="background:var(--dark)">
-  <p class="lbl" data-r>01 — About</p>
+  <p class="lbl" data-r>About</p>
   <div class="about-grid">
     <div>
       <h2 class="d-lg" style="color:var(--white);margin-top:1.2rem;font-size:40px" data-r data-d="1">
@@ -489,7 +489,7 @@
 
 <!-- SERVICES -->
 <section class="sec" style="background:var(--white)">
-  <p class="lbl" style="color:var(--accent)" data-r>02 — What We Do</p>
+  <p class="lbl" style="color:var(--accent)" data-r>What We Do</p>
   <h2 class="d-md" style="color:var(--black);margin-top:.9rem;max-width:700px;font-size:40px" data-r data-d="1">
     Three disciplines.<br>One standard.
   </h2>
@@ -555,9 +555,9 @@
 <section class="sec grain" style="background:var(--white)">
   <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1.5rem">
     <div>
-      <p class="lbl" data-r>03 — Selected Work</p>
-      <h2 class="d-md" style="color:var(--black);margin-top:.9rem;max-width:580px;font-size:40px" data-r data-d="1">
-        A look at what we've made, and who we've made it with.
+      <p class="lbl" data-r>Selected Work</p>
+      <h2 class="d-md" style="color:var(--black);margin-top:.9rem;max-width:900px;font-size:40px" data-r data-d="1">
+        What we've made.
       </h2>
     </div>
     <a href="work.html" class="link-arrow dark" data-r>
@@ -647,7 +647,7 @@
     <li><a href="work.html">Work</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  <p class="footer-copy">© 2025 Forty-One Studio<br>Part of The Forty-One Group</p>
+  <p class="footer-copy">&copy; <span class="footer-year">2026</span> Forty-One Studio | A Forty-One Group Company</p>
 </footer>
 
 <script>
@@ -681,5 +681,6 @@
     document.querySelectorAll('#hero [data-r]').forEach(el => el.classList.add('on'));
   }, 80);
 </script>
+<script>document.querySelectorAll('.footer-year').forEach(function(e){e.textContent=new Date().getFullYear();});</script>
 </body>
 </html>

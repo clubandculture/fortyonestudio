@@ -185,7 +185,7 @@
     <li><a href="../work.html">Work</a></li>
     <li><a href="../contact.html">Contact</a></li>
   </ul>
-  <p class="footer-copy">© 2025 Forty-One Studio<br>Part of The Forty-One Group</p>
+  <p class="footer-copy">&copy; <span class="footer-year">2026</span> Forty-One Studio | A Forty-One Group Company</p>
 </footer>
 
 <!-- Load project data then render -->
@@ -304,5 +304,6 @@
     document.querySelectorAll('[data-r]').forEach(el => io.observe(el));
   }
 </script>
+<script>document.querySelectorAll('.footer-year').forEach(function(e){e.textContent=new Date().getFullYear();});</script>
 </body>
 </html>
