@@ -25,6 +25,58 @@
 
 const PROJECTS = {
 
+  'remitly-house-atl': {
+    title: 'Remitly House ATL',
+    service: 'Experiential & Events',
+    client: 'Remitly',
+    year: '2026',
+    region: 'North America',
+    heroDesc: 'Event production for Remitly in Atlanta.',
+    overview: [
+      'Financial company Remitly wanted to activate across multiple cities for the Afcon Final. We were selected to activate the Atlanta market by hosting a watch event for Senegal v Morocco in the Afcon Final.',
+    ],
+    deliverables: ['Event Production', 'Social Content', 'Photography'],
+    link: '',
+    featured: {
+      type: 'image',
+      src: '../media/RemitlyHouse/TNW00195.jpg',
+      caption: '',
+    },
+    gallery: [
+      { type: 'embed', embedSrc: 'https://www.instagram.com/reel/DTn4jpEicKJ/embed/', alt: 'Remitly House ATL — Reel', layout: 'normal', ratio: 'portrait' },
+      { type: 'image', src: '../media/RemitlyHouse/TNW00048.jpg',  alt: 'Remitly House ATL', layout: 'normal', ratio: 'portrait' },
+      { type: 'image', src: '../media/RemitlyHouse/TNW00081.jpg',  alt: 'Remitly House ATL', layout: 'normal', ratio: 'square'   },
+      { type: 'image', src: '../media/RemitlyHouse/TNW00096.jpg',  alt: 'Remitly House ATL', layout: 'normal', ratio: 'square'   },
+      { type: 'image', src: '../media/RemitlyHouse/TNW00221.jpg',  alt: 'Remitly House ATL', layout: 'wide',   ratio: 'video'    },
+      { type: 'image', src: '../media/RemitlyHouse/TNW00287.jpg',  alt: 'Remitly House ATL', layout: 'normal', ratio: 'portrait' },
+      { type: 'image', src: '../media/RemitlyHouse/TNW00334.jpg',  alt: 'Remitly House ATL', layout: 'normal', ratio: 'portrait' },
+      { type: 'image', src: '../media/RemitlyHouse/TNW00357.jpg',  alt: 'Remitly House ATL', layout: 'wide',   ratio: 'video'    },
+    ],
+  },
+
+  'nike-toma-stories': {
+    title: 'Nike Toma Stories',
+    service: 'Content & Production',
+    client: 'A Creative Force',
+    year: '2026',
+    region: 'North America',
+    heroDesc: 'Telling the stories of some of the nation\'s best young footballers.',
+    overview: [
+      'We teamed up with A Creative Force to highlight some of the nation\'s most promising young footballers as they prepare to represent their cities at Toma El Juego.',
+    ],
+    deliverables: ['Short-form Content'],
+    link: '',
+    featured: {
+      type: 'image',
+      src: '../media/TomaStories/Toma_Stories_Cover.png',
+      caption: '',
+    },
+    gallery: [
+      { type: 'embed', embedSrc: 'https://www.youtube.com/embed/1Qe9LPrwo6A', alt: 'Toma Stories — Episode 1', layout: 'wide', ratio: 'video' },
+      { type: 'embed', embedSrc: 'https://www.youtube.com/embed/umSyCyKgQes', alt: 'Toma Stories — Episode 2', layout: 'wide', ratio: 'video' },
+    ],
+  },
+
   'nike-toma-atl': {
     title: 'Nike Toma ATL',
     service: 'Content & Production',
