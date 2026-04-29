@@ -1,0 +1,28 @@
+{
+  "name": "fortyonestudio",
+  "version": "1.0.0",
+  "description": "Forty-One Studio — Cultural Storytellers",
+  "type": "module",
+  "scripts": {
+    "dev": "node serve.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clubandculture/fortyonestudio.git"
+  },
+  "keywords": [
+    "cultural",
+    "storytelling",
+    "studio"
+  ],
+  "author": "Forty-One Studio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/clubandculture/fortyonestudio/issues"
+  },
+  "homepage": "https://github.com/clubandculture/fortyonestudio#readme",
+  "dependencies": {
+    "@vercel/speed-insights": "^2.0.0"
+  }
+}
