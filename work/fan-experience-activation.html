@@ -79,6 +79,13 @@
     .media-item:hover figcaption{opacity:1}
     @media(max-width:900px){.project-body{grid-template-columns:1fr}.meta-panel{border-top:none;padding-top:0}}
     @media(max-width:600px){.media-grid{grid-template-columns:1fr}.media-item.wide{grid-column:span 1}footer{grid-template-columns:1fr;text-align:center}.footer-copy{text-align:center}.footer-logo{display:flex;justify-content:center}.nav-links{display:none}#menuBtn{display:flex}}
+  
+    /* ── MOBILE OVERFLOW FIXES ───────────────────────────── */
+    @media (max-width: 600px) {
+      .d-hero, .d-xl { font-size: clamp(1.5rem, 7vw, 3.75rem) !important; }
+      .d-lg  { font-size: clamp(1.6rem, 8vw, 2.8rem) !important; }
+      h1, h2 { overflow-wrap: break-word; max-width: 100%; }
+    }
   </style>
 </head>
 <body>

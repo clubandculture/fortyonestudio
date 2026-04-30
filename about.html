@@ -139,6 +139,20 @@
     }
     @media(max-width:860px){.two-col{grid-template-columns:1fr}.stat-grid{grid-template-columns:1fr 1fr}footer{grid-template-columns:1fr;text-align:center}.footer-copy{text-align:center}.footer-logo{display:flex;justify-content:center}.nav-links{display:none}#menuBtn{display:flex}}
     @media(max-width:540px){.stat-grid{grid-template-columns:1fr}}
+  
+    /* ── MOBILE OVERFLOW FIXES ───────────────────────────── */
+    @media (max-width: 600px) {
+      .d-hero, .d-xl { font-size: clamp(1.5rem, 7vw, 3.75rem) !important; }
+      .d-lg  { font-size: clamp(1.6rem, 8vw, 2.8rem) !important; }
+      h1, h2 { overflow-wrap: break-word; max-width: 100%; }
+      /* Team photo columns — scale to fit mobile viewport */
+      .ts-cols { gap: 8px; }
+      .ts-col:nth-child(1) .ts-photo { width: 90px;  height: 112px; }
+      .ts-col:nth-child(2) .ts-photo { width: 102px; height: 124px; }
+      .ts-col:nth-child(3) .ts-photo { width: 95px;  height: 118px; }
+      .ts-col:nth-child(2) { margin-top: 40px; }
+      .ts-col:nth-child(3) { margin-top: 20px; }
+    }
   </style>
 </head>
 <body>

@@ -408,6 +408,15 @@
       .nav-links { display: none; }
       #menuBtn { display: flex; }
     }
+  
+    /* ── MOBILE OVERFLOW FIXES ───────────────────────────── */
+    @media (max-width: 600px) {
+      .d-hero { font-size: clamp(2rem, 10vw, 3.75rem) !important; }
+      .d-xl   { font-size: clamp(1.5rem, 7vw, 3.75rem) !important; }
+      .d-lg  { font-size: clamp(1.6rem, 8vw, 2.8rem) !important; }
+      .d-md  { font-size: 35px !important; }
+      h1, h2 { overflow-wrap: break-word; max-width: 100%; }
+    }
   </style>
 </head>
 <body>
